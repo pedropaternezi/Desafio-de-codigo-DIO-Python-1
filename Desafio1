@@ -1,0 +1,16 @@
+# Importa o módulo sys
+import sys
+
+# Lê o número de casos de teste
+C = int(sys.stdin.readline())
+
+# Loop para cada caso de teste
+for i in range(C):
+    # Lê o nível de energia do ser vivo
+    N = int(sys.stdin.readline(8001))
+    
+    # Verifica se é um inseto ou não
+    if N <= 8000:
+        print("Inseto!")
+    else:
+        print("Mais de 8000!")
